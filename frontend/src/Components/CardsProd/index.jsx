@@ -21,7 +21,7 @@ const itensProduto = [
     }
 ]
 
-export default function CardsProd(){
+export function CardsProd(){
     return (
         <div>
       <h2 className="text-center">Destinos</h2>
@@ -50,4 +50,34 @@ export default function CardsProd(){
 </Row>
 </div>
     )
+}
+export function CardProdId(){
+  return (
+      <div>
+    <h2 className="text-center">Destinos</h2>
+  <Row xs={2} md={3} className="g-2 p-5">
+  {itensProduto.map((prod, idx) => (
+    <Col>
+    <Card>
+      <Card.Img 
+      variant="top"
+      src={prod.image}
+      width="150px"
+      height="300px"
+      />
+      <Card.Body>
+        <Card.Title>{prod.title}</Card.Title>
+        <Card.Text>
+          <p>{prod.price}</p>
+        </Card.Text>
+        <Button >
+            Comprar
+        </Button>
+      </Card.Body>
+    </Card>
+  </Col>
+    ))}
+</Row>
+</div>
+  )
 }
