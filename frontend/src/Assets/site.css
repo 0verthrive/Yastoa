@@ -10,6 +10,8 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
 }
 
 ul, li {
@@ -454,7 +456,7 @@ body {
 
 
     .banner-box {
-        background-image: url("ABRIL.png");
+        /*background-image: url("ABRIL.png");*/
         min-width: 580px;
         height: 50vh;
         background-size: cover;
@@ -466,9 +468,9 @@ body {
         padding: 30px;
     }
 
-    .banner-box2 {
+    /*.banner-box2 {
         background-image: url("doação.png");
-    }
+    }*/
 
 #banner3 {
     display: flex;
@@ -478,7 +480,7 @@ body {
 }
 
     #banner3 .banner-box {
-        background-image: url("BannerValeM.png");
+        /*background-image: url("BannerValeM.png");*/
         min-width: 30%;
         height: 30vh;
         background-size: cover;
@@ -491,13 +493,13 @@ body {
         margin-bottom: 20px;
     }
 
-    #banner3 .banner-box2 {
+   /* #banner3 .banner-box2 {
         background-image: url("doação.png");
     }
 
     #banner3 .banner-box3 {
         background-image: url("ABRIL.png");
-    }
+    }*/
 
 
 #newsletter {
@@ -505,7 +507,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url("img/banner/b14.png");
+    /*background-image: url("img/banner/b14.png");*/
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041e42;
@@ -619,7 +621,7 @@ footer {
 /* Produtos */
 
 #page-header {
-    background-image: url("Fulnij.png");
+   /* background-image: url("Fulnij.png");*/
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -723,9 +725,9 @@ footer {
     padding: 150px 150px 0 150px;
 }
 
-#page-header.blog-header {
+/*#page-header.blog-header {
     background-image: url("img/banner/b19.jpg");
-}
+}*/
 
 #blog .blog-box {
     width: 100%;
@@ -1958,3 +1960,4 @@ buttonmap {
 .tamanhopro{
     width:100%;
 }
+

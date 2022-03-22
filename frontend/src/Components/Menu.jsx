@@ -1,42 +1,117 @@
 import React from "react";
-import {Container, Navbar, Nav} from 'react-bootstrap';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import Home from "../View/Home";
-import Login from "../View/Login/index";
-import Produtos from "../View/Produtos/Produtos/index";
-import Registrar from "../View/Registrar";
+import { Link, Box, Flex, Text, Button, Stack } from "@chakra-ui/react";
+import Logo from "./Logo";
 
-export default function Menu() {
+const Menu = (props) => {
+  const [isOpen, setIsOpen] = React.useState(false);
 
-    return (
-<BrowserRouter>
-<Navbar bg="light" expand="lg">
-    <Container fluid>
-    <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-    <div   className="justify-content-end">
-    <Navbar.Toggle aria-controls="navbarScroll" />
-    
-    <Navbar.Collapse id="navbarScroll">
-      <Nav
-        className="me-auto my-2 my-lg-0"
-        style={{ maxHeight: '100px' }}
-        navbarScroll
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <NavBarContainer {...props}>
+      <Logo
+        w="100px"
+        color={["white", "white", "primary.500", "primary.500"]}
+      />
+      <MenuToggle toggle={toggle} isOpen={isOpen} />
+      <MenuLinks isOpen={isOpen} />
+    </NavBarContainer>
+  );
+};
+
+const CloseIcon = () => (
+  <svg width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+    <title>Fechar</title>
+    <path
+      fill="white"
+      d="M9.00023 7.58599L13.9502 2.63599L15.3642 4.04999L10.4142 8.99999L15.3642 13.95L13.9502 15.364L9.00023 10.414L4.05023 15.364L2.63623 13.95L7.58623 8.99999L2.63623 4.04999L4.05023 2.63599L9.00023 7.58599Z"
+    />
+  </svg>
+);
+
+const MenuIcon = () => (
+  <svg
+    width="24px"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="white"
+  >
+    <title>Menu</title>
+    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+  </svg>
+);
+
+const MenuToggle = ({ toggle, isOpen }) => {
+  return (
+    <Box display={{ base: "block", md: "none" }} onClick={toggle}>
+      {isOpen ? <CloseIcon /> : <MenuIcon />}
+    </Box>
+  );
+};
+
+const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
+  return (
+    <Link href={to}>
+      <Text display="block" {...rest}>
+        {children}
+      </Text>
+    </Link>
+  );
+};
+
+const MenuLinks = ({ isOpen }) => {
+  return (
+    <Box
+      display={{ base: isOpen ? "block" : "none", md: "block" }}
+      flexBasis={{ base: "100%", md: "auto" }}
+    >
+      <Stack
+        spacing={8}
+        align="center"
+        justify={["center", "space-between", "flex-end", "flex-end"]}
+        direction={["column", "row", "row", "row"]}
+        pt={[4, 4, 0, 0]}
       >
-        <Nav.Link href={"/"}>Home</Nav.Link>
-        <Nav.Link href="/produtos">Produtos</Nav.Link>
-        <Nav.Link>Contatos</Nav.Link>
-        <Nav.Link href="/login">Login</Nav.Link>
-      </Nav>
-    </Navbar.Collapse>
-    </div>
-  </Container>
-</Navbar>
-<Routes>
-        <Route element={<Home/>} path="/"></Route>         
-        <Route element={<Produtos/>} path="/produtos"></Route> 
-        <Route element={<Login/>} path="/login"></Route>
-        <Route element={<Registrar/>} path="/registrar"></Route>                      
-</Routes>
-</BrowserRouter>
-    );
-}
+        <MenuItem to="/">Home</MenuItem>
+        <MenuItem to="/Produtos">Produtos</MenuItem>
+        <MenuItem to="/Blog">Blog</MenuItem>
+        <MenuItem to="/">Contatos</MenuItem>
+        <MenuItem><i class="far fa-shopping-bag"></i></MenuItem>
+        <MenuItem to="/Login" isLast>
+          <Button
+            size="sm"
+            rounded="md"
+            color={["primary.500", "primary.500", "white", "white"]}
+            bg={["white", "white", "primary.500", "primary.500"]}
+            _hover={{
+              bg: ["primary.100", "primary.100", "primary.600", "primary.600"]
+            }}
+          >
+            Login
+          </Button>
+        </MenuItem>
+      </Stack>
+    </Box>
+  );
+};
+
+const NavBarContainer = ({ children, ...props }) => {
+  return (
+    <Flex
+      as="nav"
+      align="center"
+      justify="space-between"
+      wrap="wrap"
+      w="100%"
+      mb={8}
+      p={8}
+      bg={["primary.500", "primary.500", "transparent", "transparent"]}
+      color={["white", "white", "primary.700", "primary.700"]}
+      {...props}
+    >
+      {children}
+    </Flex>
+  );
+};
+
+export default Menu;

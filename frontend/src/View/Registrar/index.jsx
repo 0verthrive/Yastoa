@@ -1,10 +1,7 @@
 import RegisterForm from "../../Components/RegisterForm";
 
-function Registrar(){
+export default function Registrar(){
     return(
         <RegisterForm/>
-    )
+    );
 }
-
-
-export default Registrar;
