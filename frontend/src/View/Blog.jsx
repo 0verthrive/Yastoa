@@ -3,11 +3,13 @@ import React from "react";
 export default function Blog() {
     return (
         <>
+
         <section id="blog">
             <div className="blog-box">
                 <div className="blog-img">
-                    <img src="~/img/Blog/BlogNot1.png" alt="" />
+                    <img src="https://www.agenciamural.org.br/wp-content/uploads/2019/05/IMG_20190428_131923-e1557520155510-1600x1120.jpg" alt="" />
                 </div>
+
                 <div className="blog-details">
                     <h1>10/02</h1>
                     <h4>Justiça anula licenciamento de projeto de mineração no RS por não ouvir indígenas</h4>
@@ -17,47 +19,51 @@ export default function Blog() {
             </div>
             <div className="blog-box">
                 <div className="blog-img">
-                    <img src="~/img/Blog/BlogNot2.jpeg" alt="" />
+                    <img src="https://amazoniareal.com.br/wp-content/uploads/2022/03/CRIANCAS-INDIGENAS-QUE-ESTAVAM-DESAPARECIDAS-EM-MANICORE1-1.jpg" alt="" />
                 </div>
                 <div className="blog-details">
-                    <h1>09/02</h1>
-                    <h4>Ministério de Saúde distribui doses de vacinas para crianças indígenas</h4>
-                    <p>O Ministério da Saúde começou a distribuir, nesta quarta-feira (9/2), novas doses pediátricas da Pfizer para vacinação do público de 5 a 11 anos. A pauta de distribuição inclui imunizantes destinados a crianças indígenas...</p>
-                    <a href="https://www.metropoles.com/brasil/ministerio-de-saude-distribui-doses-de-vacinas-para-criancas-indigenas">CONTINUE LENDO</a>
+                    <h1>17/03</h1>
+                    <h4>Perdidos na floresta amazônica: meninos Mura são encontrados vivos</h4>
+                    <p> “Vem me buscar”. O apelo, vindo de uma voz triste e distante, salvou as vidas dos irmãos indígenas Glauco, 6, e Gleison, 8, que passaram 26 dias perdidos na floresta amazônica, no município de Manicoré, no sul...</p>
+                    <a href="https://amazoniareal.com.br/perdidos-na-floresta-amazonica-meninos-mura-sao-encontrados-vivos/">CONTINUE LENDO</a>
                 </div>
+               
             </div>
             <div className="blog-box">
                 <div className="blog-img">
-                    <img src="~/img/Blog/BlogNot3.jpg" alt="" />
+                    <img src="https://s2.glbimg.com/bXDep9OQxAwP41pLqPM1OrlnYZg=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/S/J/iFDzKCTFqaJZaooKhA5w/indigenas-24-5.jpg" alt="" />
                 </div>
                 <div className="blog-details">
-                    <h1>11/02</h1>
-                    <h4>Consulado dos EUA oferece curso de inglês para negros e indígenas</h4>
-                    <p>O Consulado Geral dos Estados Unidos, em parceria com o Grupo +Unidos, realiza a segunda edição do Programa Access E2C 2022...</p>
-                    <a href="https://www.em.com.br/app/noticia/diversidade/2022/02/11/noticia-diversidade,1344179/consulado-dos-eua-oferece-curso-de-ingles-para-negros-e-indigenas.shtml">CONTINUE LENDO</a>
+                    <h1>24/08</h1>
+                    <h4>Indígenas protestam em Brasília contra medidas que dificultam demarcação de terras</h4>
+                    <p>Indígenas de várias regiões do país protestaram na Esplanada dos Ministérios, em Brasília, nesta terça-feira (24), contra medidas que dificultam a demarcação de terras e ...</p>
+                    <a href="https://g1.globo.com/df/distrito-federal/noticia/2021/08/24/indigenas-protestam-em-brasilia-contra-medidas-que-dificultam-demarcacao-de-terras.ghtml">CONTINUE LENDO</a>
                 </div>
+        
             </div>
             <div className="blog-box">
                 <div className="blog-img">
-                    <img src="~/img/Blog/BlogNot4.jpeg" alt="" />
+                    <img src="https://s1.static.brasilescola.uol.com.br/be/e/Indios%20Brasileiros%20-%20BRASIL%20ESCOLA.jpg" alt="" />
                 </div>
                 <div className="blog-details">
-                    <h1>14/02</h1>
-                    <h4>Indígenas iniciam reflorestamento de mais de 350 hectares em Rondônia e Mato Grosso</h4>
-                    <p>Mais de 300 iniciativas em sete terras indígenas em Rondônia e uma no noroeste do estado de Mato Grosso iniciaram o processo de restauração...</p>
-                    <a href="https://www.rondoniagora.com/cidades/indigenas-iniciam-reflorestamento-de-mais-de-350-hectares-em-rondonia-e-mato-grosso">CONTINUE LENDO</a>
+                    <h1>22/03</h1>
+                    <h4>Índios no Brasil</h4>
+                    <p>A presença dos índios no território brasileiro é muito anterior ao processo de ocupação estabelecido pelos exploradores europeus que aportaram em nossas terras. Segundo os dados presentes em algumas...</p>
+                    <a href="https://brasilescola.uol.com.br/historiab/indios-brasil.htm">CONTINUE LENDO</a>
                 </div>
+            
             </div>
             <div className="blog-box">
                 <div className="blog-img">
-                    <img src="~/img/Blog/BlogNot5.jpeg" alt="" />
+                    <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo_legenda/f08f1807676a95bc508959f2a6c734b2.jpg" alt="" />
                 </div>
                 <div className="blog-details">
                     <h1>08/02</h1>
-                    <h4>Funai destinou R$ 33,5 milhões a ações de proteção a indígenas isolados e de recente contato em 2021</h4>
-                    <p>AFundação Nacional do Índio (Funai) destinou R$ 33,5 milhões a ações de proteção a indígenas isolados e de recente contato ao longo de 2021...</p>
-                    <a href="https://www.gov.br/funai/pt-br/assuntos/noticias/2022/funai-destinou-r-33-5-milhoes-a-acoes-de-protecao-a-indigenas-isolados-e-de-recente-contato-em-2021">CONTINUE LENDO</a>
+                    <h4>População indígena no Brasil</h4>
+                    <p>A população indígena no Brasil representa um grande contingente de povos indígenas que, ao longo dos anos, sofreu um considerável decréscimo, seja por extermínio, seja por doenças...</p>
+                    <a href="https://mundoeducacao.uol.com.br/geografia/a-populacao-indigena-no-brasil.htm">CONTINUE LENDO</a>
                 </div>
+             
             </div>
         </section>
 
