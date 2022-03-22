@@ -77,19 +77,7 @@ const MenuLinks = ({ isOpen }) => {
         <MenuItem to="/Blog">Blog</MenuItem>
         <MenuItem to="/">Contatos</MenuItem>
         <MenuItem><i class="far fa-shopping-bag"></i></MenuItem>
-        <MenuItem to="/Login" isLast>
-          <Button
-            size="sm"
-            rounded="md"
-            color={["primary.500", "primary.500", "white", "white"]}
-            bg={["white", "white", "primary.500", "primary.500"]}
-            _hover={{
-              bg: ["primary.100", "primary.100", "primary.600", "primary.600"]
-            }}
-          >
-            Login
-          </Button>
-        </MenuItem>
+        <MenuItem to="/Login" isLast><i class="bi bi-person-circle"></i></MenuItem>
       </Stack>
     </Box>
   );
