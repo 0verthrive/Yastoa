@@ -12,9 +12,9 @@ export default function Blog() {
 
                 <div className="blog-details">
                     <h1>10/02</h1>
-                    <h4>Justiça anula licenciamento de projeto de mineração no RS por não ouvir indígenas</h4>
-                    <p>O projeto da Mina Guaíba, no Rio Grande do Sul, não fez consulta às comunidades guaranis que seriam diretamente afetadas pelo empreendimento, suspenso com a decisão judicial...</p>
-                    <a href="https://oeco.org.br/noticias/justica-anula-licenciamento-de-projeto-de-mineracao-no-rs-por-nao-ouvir-indigenas/">CONTINUE LENDO</a>
+                    <h4>Onde estao os 21 Mil Indigenas da Grande São Paulo</h4>
+                    <p>Em Guarulhos desde os anos 1990, Paulo Matos da Silva, 45, é cacique do povo Wassu Cocal. Mais populosa cidade do estado depois da capital, com 1,3 milhão de habitantes, o município da Grande ...</p>
+                    <a href="https://www.agenciamural.org.br/guarulhos-e-osasco-o-passado-e-o-presente-indigena-na-grande-sp/">CONTINUE LENDO</a>
                 </div>
             </div>
             <div className="blog-box">
