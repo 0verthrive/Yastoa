@@ -1,10 +1,10 @@
 import React from "react";
-import {Box} from '@chakra-ui/react'
+import { Container } from "react-bootstrap";
 
 export default function Logo() {
   return (
-    <Box>
+    <div>
       <img src="https://github.com/flpeandrade/YASTOA/blob/main/yastoaRecode/wwwroot/img/logo.png?raw=true" />
-    </Box>
+    </div>
   );
 }
