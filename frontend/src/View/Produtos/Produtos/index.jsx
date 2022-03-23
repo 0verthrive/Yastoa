@@ -1,7 +1,4 @@
 import React from "react";
-import {Card, Row, Col, Button, Container} from 'react-bootstrap';
-import {} from "@chakra-ui/react";
-
 
 export default function Produtos() {
     return (
