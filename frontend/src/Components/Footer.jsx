@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <>
+        <div>
         <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>Inscreva-se para receber alerta de Novas Coleções e Reposições</h4>
@@ -66,6 +67,7 @@ export default function Footer() {
             <p>&copy; YASTOA — Privacidade</p>
         </div>
     </footer>
+    </div>
         </>
     );
 }

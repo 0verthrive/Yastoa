@@ -1021,8 +1021,6 @@ footer {
     }
 }
 
-
-
 @media (min-width: 1200px) {
     .wrapper {
         max-width: 1140px;
@@ -1048,25 +1046,22 @@ footer {
     text-align: left;
 }
 
-
-
 .text-right {
     text-align: right;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> e36ed0665587b7b4ccdba24fe867b9af64da451e
 a {
     text-decoration: none;
 }
 
-
-
 iframe {
     border: none;
 }
-
-
 
 h1,
 h2,
@@ -1949,5 +1944,9 @@ buttonmap {
 .bi{
 
     font-size: 23px;
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> e36ed0665587b7b4ccdba24fe867b9af64da451e

@@ -25,7 +25,7 @@ export default function LoginForm() {
   }
 
   return (
-    <Container className="w-25 p-3 py-5">
+    <Container className="w-50 p-3 py-5">
       <Card>
         <Card.Header className="px-5">
           <Nav>

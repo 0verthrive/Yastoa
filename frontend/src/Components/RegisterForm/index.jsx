@@ -26,7 +26,7 @@ export default function RegisterForm() {
   }
 
   return (
-    <Container className="w-25 p-3">
+    <Container className="w-50 p-3">
       <Card>
         <Card.Header className="px-5">
           <Nav>
