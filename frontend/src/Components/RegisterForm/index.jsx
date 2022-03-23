@@ -63,7 +63,7 @@ export default function RegisterForm() {
               <Nav.Link as={Link} to={"/"}>Cancelar</Nav.Link>
             </Form.Group>
             <Button variant="primary" type="submit">
-              Cadastrar
+              Registrar-se
             </Button>
           </Form>
         </Card.Body>
