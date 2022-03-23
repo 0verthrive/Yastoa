@@ -3,54 +3,53 @@ import React from "react";
 export default function Contato() {
     return (
         <>
-           <section class="w3l-contact-12">
-        <div class="wrapper ">
-            <div class="contact-main">
-                <div class="grid grid-column-2">
-                    <div class="column">
-                        <h3 class="header">Sobre nós:</h3>
-                        <p class="head-main">
+           <section className="w3l-contact-12">
+        <div className="wrapper ">
+            <div className="contact-main">
+                <div className="grid grid-column-2">
+                    <div className="column">
+                        <h3 className="header">Sobre nós:</h3>
+                        <p className="head-main">
                             Somos Yastoa, parceira dos povos indígenas ajudando no desenvolvimento socio economico de suas aldeias.
                             Dividindo entre compra e venda para geração de renda a estes povos.
                             Conectando não indígenas com a cultura dos primeiros originários do Brasil e suas causas.
                             Venha conosco!
                         </p>
                     </div>
-                    <div class="column2">
-                        <div class="href1">
-                            <span class="fa fa-envelope-o" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a>
+                    <div className="column2">
+                        <div className="href1">
+                            <span className="fa fa-envelope-o" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a>
                         </div>
-                        <div class="href2">
-                            <span class="fa fa-phone" aria-hidden="true"></span><a href="tel:+44-000-888-999">+44-000-888-999</a>
+                        <div className="href2">
+                            <span className="fa fa-phone" aria-hidden="true"></span><a href="tel:+44-000-888-999">+44-000-888-999</a>
                         </div>
                         <div>
-                            <p class="contact-para">
-                                <span class="fa fa-map-marker" aria-hidden="true"></span>
+                            <p className="contact-para">
+                                <span className="fa fa-map-marker" aria-hidden="true"></span>
                                 Rua Além Paraíba, 100 Pedra Branca - São Paulo
                             </p>
                         </div>
                     </div>
-                    <div class="column3">
-                        <p class="follow">Fale conosco:</p>
+                    <div className="column3">
+                        <p className="follow">Fale conosco:</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="contacts-9">
-            <div class="contacts-sub-9">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1563262564932!5m2!1sen!2sin" allowfullscreen=""></iframe>
-                <div class="map-content-9">
-                    <div class="sub-grids-cont-9">
-                        <h4 class="sub-feat-text">Entre em contato conosco</h4>
-                        <p class="sub-para">Campos obrigatórios estão marcados com *</p>
+        <div className="contacts-9">
+            <div className="contacts-sub-9">
+                <div className="map-content-9">
+                    <div className="sub-grids-cont-9">
+                        <h4 className="sub-feat-text">Entre em contato conosco</h4>
+                        <p className="sub-para">Campos obrigatórios estão marcados com *</p>
                     </div>
                     <form action="https://sendmail.w3layouts.com/submitForm" method="post">
-                        <div class="twice-two">
+                        <div className="twice-two">
                             <input type="text" name="w3lName" id="w3lName" placeholder="Name"/>
                             <input type="email" name="w3lSender" id="w3lSender" placeholder="Email*" required=""/>
                         </div>
                          <textarea name="w3lMessage" id="w3lMessage" placeholder="Message*" required=""></textarea>
-                         <button type="button" class="btnmap btn-lg btn-block">Enviar</button>
+                         <button type="button" className="btnmap btn-lg btn-block">Enviar</button>
                     </form>
                 </div>
             </div>
