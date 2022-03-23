@@ -1,6 +1,11 @@
 import React from "react";
+<<<<<<< HEAD
+import { Link, Box, Flex, Text, Stack, Button } from "@chakra-ui/react";
+=======
 import { Link, Box, Flex, Text, Stack } from "@chakra-ui/react";
+>>>>>>> e36ed0665587b7b4ccdba24fe867b9af64da451e
 import Logo from "./Logo";
+
 
 const Menu = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -8,10 +13,10 @@ const Menu = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <NavBarContainer {...props}>
+    <NavBarContainer {...props} >
       <Logo
-        w="100px"
-        color={["white", "white", "primary.500", "primary.500"]}
+        w="130px"
+        color={["primary.50", "primary.50", "primary.500", "primary.500"]}
       />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
@@ -43,8 +48,8 @@ const MenuIcon = () => (
 
 const MenuToggle = ({ toggle, isOpen }) => {
   return (
-    <Box display={{ base: "block", md: "none" }} onClick={toggle}>
-      {isOpen ? <CloseIcon /> : <MenuIcon />}
+    <Box display={{ base: "block", md: "none" }} onClick={toggle} >
+      {isOpen ? <CloseIcon background="#c3c6f3" /> : <MenuIcon  />}
     </Box>
   );
 };
@@ -63,7 +68,7 @@ const MenuLinks = ({ isOpen }) => {
   return (
     <Box
       display={{ base: isOpen ? "block" : "none", md: "block" }}
-      flexBasis={{ base: "100%", md: "auto" }}
+      flexBasis={{ base: "100%", md: "auto" }} 
     >
       <Stack
         spacing={8}
@@ -75,9 +80,21 @@ const MenuLinks = ({ isOpen }) => {
         <MenuItem to="/">Home</MenuItem>
         <MenuItem to="/Produtos">Produtos</MenuItem>
         <MenuItem to="/Blog">Blog</MenuItem>
-        <MenuItem to="/">Contatos</MenuItem>
-        <MenuItem><i class="far fa-shopping-bag"></i></MenuItem>
-        <MenuItem to="/Login" isLast><i class="bi bi-person-circle"></i></MenuItem>
+        <MenuItem to="/Contatos">Contatos</MenuItem>
+        <MenuItem><i class="bi bi-bag-fill"></i></MenuItem>
+        <MenuItem to="/Login" isLast>
+        <Button
+            size="sm"
+            rounded="md"
+            color={["primary.500", "primary.500", "white", "white"]}
+            bg={["white", "white", "primary.500", "primary.500"]}
+            _hover={{
+              bg: ["primary.100", "primary.100", "primary.600", "primary.600"]
+            }}
+          >
+            Login
+          </Button>
+        </MenuItem>
       </Stack>
     </Box>
   );

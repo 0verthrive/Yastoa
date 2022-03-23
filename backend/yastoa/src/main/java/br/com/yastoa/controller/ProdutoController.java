@@ -44,7 +44,7 @@ public class ProdutoController {
 				.orElse(ResponseEntity.notFound().build());
 	}
 	
-	@GetMapping("/nome/{nome}")
+	@GetMapping("/produtos")
 	public ResponseEntity<List<Produto>> findAllByNomeProdutos(@PathVariable String nome) {
 		
 		return ResponseEntity.ok(repository.findAllByNome(nome));
