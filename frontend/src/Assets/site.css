@@ -1056,23 +1056,6 @@ footer {
 
 
 
-buttonmap,
-select {
-    outline: none;
-    -webkit-appearance: none;
-}
-
-
-
-buttonmap,
-btnmap,
-select {
-    cursor: pointer;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-}
-
-
-
 a {
     text-decoration: none;
 }
@@ -1110,6 +1093,10 @@ p {
     padding: 4.5rem 0;
 }
 
+.btnmap{
+
+    background-color: #088178;
+}
 
 
 @media screen and (max-width:767px) {
@@ -1725,11 +1712,6 @@ buttonmap {
         grid-template-columns: 1fr;
     }
 
-
-
-    buttonmap {
-        width: 100%;
-    }
 
 
 

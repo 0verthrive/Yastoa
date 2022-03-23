@@ -1,51 +1,52 @@
 import React from "react";
-import Carousel from 'react-bootstrap/Carousel'
+import { Carousel } from 'react-bootstrap';
 
 
 export default function Home() {
     return (
   
         <>
-            <Carousel fade>
-                <Carousel.Item>
+            <Carousel>
+                <Carousel.Item interval={1500}>
                     <img
                         className="d-block w-100"
-                        src="./img/bannerp.jpg"
+                        height="400vh"
+                        src="./img/produtosex.jpg"
                         alt=""
                     />
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item interval={1500}>
                     <img
                         className="d-block w-100"
+                        height="400vh"
+                        src="./img/banner3.jpg"
+                        alt=""
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={1500}>
+                    <img
+                        className="d-block w-100"
+                        height="400vh"
                         src="./img/banner2.png"
                         alt=""
                     />
-
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="./img/Bannerp3.png"
-                        alt=""
-                    />
-
                 </Carousel.Item>
             </Carousel>
             <section id="feature" class="section-p1">
                 <div class="fe-box">
-                    <img src="img/features/f1.png" alt=""/>
+                    <img src="./img/features/f1.png" alt=""/>
                         <h6>Envio Rápido</h6>
                 </div>
                 <div class="fe-box">
-                    <img src="img/features/f2.png" alt=""/>
+                    <img src="./img/features/f2.png" alt=""/>
                         <h6>Compra em menor tempo</h6>
                 </div>
                 <div class="fe-box">
-                    <img src="img/features/f3.png" alt=""/>
+                    <img src="./img/features/f3.png" alt=""/>
                         <h6>Compra segura</h6>
                 </div>
                 <div class="fe-box">
-                    <img src="img/features/f4.png" alt=""/>
+                    <img src="./img/features/f4.png" alt=""/>
                         <h6>Promoções</h6>
                 </div>
             </section>

@@ -50,7 +50,7 @@ export default function Contato() {
                             <input type="email" name="w3lSender" id="w3lSender" placeholder="Email*" required=""/>
                         </div>
                          <textarea name="w3lMessage" id="w3lMessage" placeholder="Message*" required=""></textarea>
-                         <button type="button" class="btn btnmap btn-lg btn-block">Enviar</button>
+                         <button type="button" class="btnmap btn-lg btn-block">Enviar</button>
                     </form>
                 </div>
             </div>

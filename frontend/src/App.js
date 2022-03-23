@@ -11,6 +11,7 @@ import Contatos from "./View/Contatos";
 
 import "./Assets/site.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import SobreNos from "./View/SobreNos";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Route element={<Registrar/>} path="/Registrar"></Route>
       <Route element={<Blog/>} path="/Blog"></Route>
       <Route element={<Contatos/>} path="/Contatos"></Route>
+      <Route element={<SobreNos/>} path="/SobreNos"></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
